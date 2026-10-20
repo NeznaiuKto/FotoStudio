@@ -67,13 +67,18 @@ h2 {
     color: #000;
 }
 
+.header-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .header-img-container img {
-    width: 100%;
-    max-width: 250px;
-    height: 60px;
+    width: 260px;        
+    height: auto;
+    border-radius: 8px;
     object-fit: cover;
-    object-position: center;
-    border-radius: 6px;
+    display: block;
 }
 
 .btn {
@@ -117,6 +122,22 @@ h2 {
     color: #fff;
 }
 
+.telotext.hero {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+
+    background-image: url('image/photo_studio1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #555;
+}
+
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -129,7 +150,7 @@ h2 {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    color: #e0e0e0;
+    color: #fff;
 }
 
 .features {
@@ -356,4 +377,19 @@ h2 {
     .about-content {
         flex-direction: column;
     }
+}
+
+.telotext.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.telotext.hero .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
 }
