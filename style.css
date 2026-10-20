@@ -165,11 +165,12 @@ h2 {
 }
 
 .feature-card {
-    padding: 40px 30px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    border: 1px solid #eee;
+    padding: 30px;
+    background-colour: #f4f4f4;
+    border-radius: 8px;
+    border: 1px solid #ddd;
     transition: transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .feature-card:hover {
